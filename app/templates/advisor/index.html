@@ -1,0 +1,13 @@
+<div class="wipe" ng-class="{loading:isLoading}">
+  <div class="container advice-container">
+    <div ng-show="firstTruth" class="lead text-center">
+      <h1>get advice: <button class="btn btn-default btn-lg" ng-click="adviceClick()">Truth</button></h1>
+    </div>
+    <h2 ng-repeat="fortune in advice.fortune" class="advice-text">{{fortune}}</h2>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p><a ng-hide="firstTruth" ng-click="adviceClick()">More Truth &rarr;</a></p>
+    </div>
+  </div>
+</div>

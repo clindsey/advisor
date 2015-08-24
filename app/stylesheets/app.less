@@ -1,0 +1,31 @@
+a, .nav, .pagination, .carousel, .panel-title a { cursor: pointer; } /* ui.bootstrap */
+
+.container {
+  padding: 0 15px;
+}
+
+.advice-text {
+  text-shadow: 1px 0 rgba(255, 255, 255, 0.6), 0 1px rgba(255, 255, 255, 0.6), -1px 0 rgba(255, 255, 255, 0.6), 0 -1px rgba(255, 255, 255, 0.6);
+}
+
+.wipe:after {
+  content: ' ';
+  display: block;
+  position: fixed;
+  width: 250%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.wipe.loading:after {
+  left: -150%;
+  -webkit-transition: left 10s;
+  transition: left 10s;
+  transition-timing-function: linear;
+}
+
+.lead {
+  margin-top: 120px;
+}
