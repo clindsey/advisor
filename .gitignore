@@ -31,6 +31,3 @@ public/
 # Bower packages folder
 bower_components/
 
-# project-specific
-app/config.coffee
-
